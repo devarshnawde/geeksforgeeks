@@ -1,0 +1,46 @@
+// Topic Sring 
+
+// url
+
+https://practice.geeksforgeeks.org/problems/display-longest-name0853/1?page=1&difficulty[]=-2&category[]=Strings&sortBy=submissions
+
+//Description
+
+Given a list of names, display the longest name.
+
+
+Example:
+
+Input:
+N = 5
+names[] = { "Geek", "Geeks", "Geeksfor",
+  "GeeksforGeek", "GeeksforGeeks" }
+
+Output:
+GeeksforGeeks
+
+
+//Accepted Code
+
+
+class GFG {
+    String longest(String names[], int n) {
+        
+        int max = 0;
+        int index = -1;
+        
+        for(int i=0; i< names.length;i++)
+        {
+            String s = names[i];
+            int len = s.length();
+            if(len > max)
+            {
+                max = len;
+                index = i;
+            }
+        }
+        
+        return names[index];
+        
+    }
+}
