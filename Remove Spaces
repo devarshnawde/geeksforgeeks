@@ -1,0 +1,36 @@
+Topic String (very basic)
+
+//url
+https://practice.geeksforgeeks.org/problems/remove-spaces0128/1?page=1&difficulty[]=-2&category[]=Strings&sortBy=submissions
+
+
+// Description
+Given a string, remove spaces from it. 
+
+Example 1:
+
+Input:
+S = "geeks  for geeks"
+Output: geeksforgeeks
+Explanation: All the spaces have been 
+removed.
+Example 2:
+
+Input: 
+S = "    g f g"
+Output: gfg
+Explanation: All the spaces including
+the leading ones have been removed.
+
+// Accepted Code
+
+
+class Solution
+{
+   
+    String modify(String S)
+    {
+        
+        return S.replace(" ","");
+    }
+}
