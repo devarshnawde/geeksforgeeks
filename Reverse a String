@@ -1,0 +1,55 @@
+// url
+
+https://practice.geeksforgeeks.org/problems/reverse-a-string/1
+
+
+//Description
+
+You are given a string s. You need to reverse the string.
+
+Example 1:
+
+Input:
+s = Geeks
+Output: skeeG
+Example 2:
+
+Input:
+s = for
+Output: rof
+
+
+// Accepted Solution
+
+class Reverse
+{
+    // Complete the function
+    // str: input string
+    public static String reverseWord(String str)
+    {
+        // Reverse the string str
+        
+        char [] ch = str.toCharArray();
+        
+        int low = 0;
+        int high = ch.length - 1;
+        
+        while(low < high)
+        {
+            char temp = ch[low];
+            ch[low] = ch[high];
+            ch[high] = temp; 
+            low++;
+            high--;
+        }
+        
+        str = "";
+        
+        for(int i=0;i<ch.length;i++)
+        {
+            str = str + ch[i];
+        }
+        
+        return str;
+    }
+}
